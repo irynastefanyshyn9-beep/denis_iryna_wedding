@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Denis & Iryna Wedding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@100;200;300;400&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="lang-switch">
+        <button onclick="changeLanguage('ua')" id="btn-ua">UA</button>
+        <span>|</span>
+        <button onclick="changeLanguage('en')" id="btn-en" class="active">EN</button>
+    </div>
+
+    <!-- 1. Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-pretitle" data-ua="З гордістю представляємо" data-en="We are getting married!">We are getting married!</p>
+            <h1 class="hero-names">Denis & Iryna</h1>
+            <div class="hero-divider"></div>
+            <p class="hero-date" data-ua="14 серпня 2026 · Торонто, Онтаріо" data-en="August 14, 2026 · Toronto, Ontario">August 14, 2026 · Toronto, Ontario</p>
+        </div>
+        <div class="hero-scroll-hint">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 2. Invitation -->
+    <section class="section-light section-invite">
+        <div class="container reveal-hidden">
+            <p class="label" data-ua="Запрошення" data-en="Invitation">Invitation</p>
+            <div class="elegant-line"></div>
+            <p class="invite-text" data-ua="З великою радістю в наших серцях ми запрошуємо вас розділити один з найзначущіших і найкрасивіших днів нашого життя — день нашого весілля.
+
+У цей особливий день, оточені людьми, які найдорожчі нам, ми розпочнемо новий розділ разом і збережемо спогади, які залишаться назавжди.
+
+Ваша присутність зробить це свято ще більш щирим, радісним і незабутнім для нас.
+Ми справді не можемо уявити цей день без вас і з нетерпінням чекаємо на спільне святкування з любов'ю, теплом і щастям." data-en="With great joy in our hearts, we invite you to share one of the most meaningful and beautiful days of our lives — our wedding day.
+
+On this special day, surrounded by the people who mean the most to us, we will begin a new chapter together and create memories to cherish forever.
+
+Your presence would make this celebration even more heartfelt, joyful, and unforgettable for us.
+We truly cannot imagine this day without you and look forward to celebrating together with love, warmth, and happiness.">With great joy in our hearts, we invite you to share one of the most meaningful and beautiful days of our lives — our wedding day.
+
+On this special day, surrounded by the people who mean the most to us, we will begin a new chapter together and create memories to cherish forever.
+
+Your presence would make this celebration even more heartfelt, joyful, and unforgettable for us.
+We truly cannot imagine this day without you and look forward to celebrating together with love, warmth, and happiness.</p>
+            <img src="photo/guege.jpg" class="doves-img" alt="">
+        </div>
+    </section>
+
+    <!-- 3. Timeline -->
+    <section class="section-light section-timeline">
+        <div class="tl-header reveal-hidden">
+            <p class="tl-date-sup" data-ua="14 серпня · 2026" data-en="August 14 · 2026">August 14 · 2026</p>
+            <h2 class="tl-title">Wedding Timeline</h2>
+        </div>
+
+        <div class="timeline-wrap">
+            <div class="tl-center-line"></div>
+
+            <div class="tl-item reveal-hidden">
+                <div class="tl-side tl-side-left">
+                    <div class="tl-text"><p class="tl-time">2 pm</p><p class="tl-name" data-ua="Церемонія" data-en="Wedding Ceremony">Wedding Ceremony</p></div>
+                    <img src="photo/rings.jpg" class="tl-icon" alt="">
+                </div>
+                <div class="tl-dot"></div>
+                <div class="tl-side tl-side-right"></div>
+            </div>
+
+            <div class="tl-item reveal-hidden">
+                <div class="tl-side tl-side-left"></div>
+                <div class="tl-dot"></div>
+                <div class="tl-side tl-side-right">
+                    <img src="photo/wine.jpg" class="tl-icon" alt="">
+                    <div class="tl-text"><p class="tl-time">4:30 pm</p><p class="tl-name" data-ua="Вітальний тост" data-en="Welcome Toast">Welcome Toast</p></div>
+                </div>
+            </div>
+
+            <div class="tl-item reveal-hidden">
+                <div class="tl-side tl-side-left">
+                    <div class="tl-text"><p class="tl-time">5 pm</p><p class="tl-name" data-ua="Весільна вечеря" data-en="Wedding Dinner">Wedding Dinner</p></div>
+                    <img src="photo/dinner.jpg" class="tl-icon" alt="">
+                </div>
+                <div class="tl-dot"></div>
+                <div class="tl-side tl-side-right"></div>
+            </div>
+
+            <div class="tl-item reveal-hidden">
+                <div class="tl-side tl-side-left"></div>
+                <div class="tl-dot"></div>
+                <div class="tl-side tl-side-right">
+                    <img src="photo/bar.jpg" class="tl-icon" alt="">
+                    <div class="tl-text"><p class="tl-time">6 pm</p><p class="tl-name" data-ua="Відкритий бар" data-en="Open Bar">Open Bar</p></div>
+                </div>
+            </div>
+
+            <div class="tl-item reveal-hidden">
+                <div class="tl-side tl-side-left">
+                    <div class="tl-text"><p class="tl-time">8 pm</p><p class="tl-name" data-ua="Вечірка" data-en="Party">Party</p></div>
+                    <img src="photo/party.jpg" class="tl-icon" alt="">
+                </div>
+                <div class="tl-dot"></div>
+                <div class="tl-side tl-side-right"></div>
+            </div>
+
+            <div class="tl-item reveal-hidden">
+                <div class="tl-side tl-side-left"></div>
+                <div class="tl-dot"></div>
+                <div class="tl-side tl-side-right">
+                    <img src="photo/cake.jpg" class="tl-icon" alt="">
+                    <div class="tl-text"><p class="tl-time">9:30 pm</p><p class="tl-name" data-ua="Розрізання торту" data-en="Cake Cutting">Cake Cutting</p></div>
+                </div>
+            </div>
+
+            <div class="tl-item reveal-hidden">
+                <div class="tl-side tl-side-left">
+                    <div class="tl-text"><p class="tl-time">10:30 pm</p><p class="tl-name" data-ua="Шведський стіл" data-en="Buffet Dinner">Buffet Dinner</p></div>
+                    <img src="photo/buffet.jpg" class="tl-icon" alt="">
+                </div>
+                <div class="tl-dot"></div>
+                <div class="tl-side tl-side-right"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Details -->
+    <section class="section-light section-details">
+        <div class="container reveal-hidden">
+            <p class="label" data-ua="Деталі весілля" data-en="The Wedding Details">The Wedding Details</p>
+            <div class="elegant-line"></div>
+
+            <div class="details-block">
+                <h3 class="details-title" data-ua="Дата та Місце" data-en="Date and Location">Date and Location</h3>
+                <p class="details-text" data-ua="14 серпня 2026 року" data-en="August 14, 2026">August 14, 2026</p>
+            </div>
+
+            <div class="details-block">
+                <h3 class="details-title" data-ua="Вінчання" data-en="Ceremony">Ceremony</h3>
+                <p class="details-text">St. Mary's Catholic Church<br>1400 W. Devon Ave,<br>Toronto, ON</p>
+            </div>
+
+            <div class="details-block">
+                <h3 class="details-title" data-ua="Прийом" data-en="Reception">Reception</h3>
+                <p class="details-text">The Galleria Marchetti<br>825 W. Erie St,<br>Toronto, ON</p>
+            </div>
+
+            <div class="details-block">
+                <h3 class="details-title">Dress Code</h3>
+                <p class="details-text" data-ua="Будемо вдячні за пастельні відтінки. Просимо уникати чорного та червоного." data-en="We kindly request pastel tones. Please avoid black and red.">We kindly request pastel tones. Please avoid black and red.</p>
+                <div class="palette">
+                    <div class="fabric-circle"><img src="photo/color1.jpg" alt=""></div>
+                    <div class="fabric-circle"><img src="photo/color2.jpg" alt=""></div>
+                    <div class="fabric-circle"><img src="photo/color3.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. RSVP -->
+    <section class="section-rsvp">
+        <div class="rsvp-scene reveal-hidden">
+            <div class="rsvp-card">
+                <p class="rsvp-kindly">Kindly</p>
+                <h2 class="rsvp-reply">REPLY</h2>
+                <p class="rsvp-desc" data-ua="Будь ласка, підтвердіть участь за посиланням нижче до&#10;15 червня 2026" data-en="Kindly RSVP using the link below by&#10;June 15, 2026">Kindly RSVP using the link below by<br>June 15, 2026</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScolpnlTlLTc4lCwMdfz715YhOFiK288XJjtj2mMA2PjXwYAw/viewform?usp=header" target="_blank" class="rsvp-click" data-ua="Натисніть тут" data-en="Click here">Click here</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
