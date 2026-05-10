@@ -5,7 +5,32 @@ function changeLanguage(lang) {
     });
     document.getElementById('btn-ua').classList.toggle('active', lang === 'ua');
     document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.body.classList.toggle('lang-ua', lang === 'ua');
 }
+
+// Music
+const music = document.getElementById('bg-music');
+const musicBtn = document.getElementById('music-btn');
+
+function toggleMusic() {
+    if (music.paused) {
+        music.play();
+        musicBtn.classList.remove('muted');
+    } else {
+        music.pause();
+        musicBtn.classList.add('muted');
+    }
+}
+
+music.volume = 0.4;
+music.play().catch(() => {
+    // Браузер заблокував — запускаємо при першому дотику
+    document.addEventListener('click', () => {
+        music.play();
+        musicBtn.classList.remove('muted');
+    }, { once: true });
+    musicBtn.classList.add('muted');
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     // Reveal при скролі
