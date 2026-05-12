@@ -212,10 +212,10 @@ body { font-family: 'Cormorant Garamond', serif; background: var(--light); color
 .section-schedule { position: relative; background: url('photo/instedHEIC.jpg') center center / cover no-repeat; padding: var(--section-padding); text-align: center; }
 .section-schedule::before { content: ''; position: absolute; inset: 0; background: rgba(30,30,30,0.45); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
 .sched-title { position: relative; z-index: 1; font-family: 'Pinyon Script', cursive; font-size: 5rem; color: #ffffff; line-height: 1; margin-bottom: 16px; }
-.sched-church { background: rgba(255,255,255,0.05); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 36px 32px; margin: 0 auto 24px; max-width: 440px; box-shadow: 0 4px 16px rgba(0,0,0,0.04); }
+.sched-church { background: rgba(255,255,255,0.05); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 36px 32px; margin: 0 auto 24px; max-width: 440px; box-shadow: 0 4px 16px rgba(0,0,0,0.04); display: flex; flex-direction: column; }
 .sched-church-label { font-family: 'Montserrat'; font-size: 0.62rem; letter-spacing: 4px; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-bottom: 14px; }
 .sched-church-name { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; color: #ffffff; font-weight: 500; margin-bottom: 10px; line-height: 1.4; }
-.sched-church-addr { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: rgba(255,255,255,0.75); font-style: italic; line-height: 1.8; margin-bottom: 24px; }
+.sched-church-addr { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: rgba(255,255,255,0.75); font-style: italic; line-height: 1.8; margin-bottom: 24px; flex: 1; }
 .sched-list { max-width: 400px; margin: 0 auto; background: rgba(255,255,255,0.05); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 12px 28px; box-shadow: 0 4px 16px rgba(0,0,0,0.04); }
 .sched-item { display: flex; align-items: center; gap: 16px; padding: 16px 0; border-bottom: 1px solid rgba(200,190,178,0.25); }
 .sched-item:last-child { border-bottom: none; }
