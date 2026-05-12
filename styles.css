@@ -152,12 +152,13 @@ body { font-family: 'Cormorant Garamond', serif; background: var(--light); color
 /* ── Venue ── */
 .section-venue { background: #faf9f7; padding: 100px 20px; text-align: center; }
 .venue-title { font-family: 'Pinyon Script', cursive; font-size: 5.5rem; color: #1a1a1a; line-height: 1; margin-bottom: 30px; }
-.venue-photo-wrap { width: 100%; max-width: 700px; margin: 0 auto 40px; border-radius: 12px; overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,0.13); }
+.venue-photo-wrap { position: relative; width: 100%; max-width: 700px; margin: 0 auto 40px; border-radius: 12px; overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,0.13); }
+.venue-photo-wrap::after { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.2); }
 .venue-photo { width: 100%; height: 420px; object-fit: cover; display: block; }
 .venue-name { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: #1a1a1a; font-weight: 500; margin-bottom: 16px; letter-spacing: 1px; }
 .venue-desc { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #444; line-height: 1.8; max-width: 420px; margin: 0 auto 36px; }
-.venue-map-btn { display: inline-block; padding: 13px 36px; border-radius: 30px; border: 1.5px solid #1a1a1a; color: #1a1a1a; text-decoration: none; font-family: 'Montserrat'; font-size: 0.68rem; letter-spacing: 2.5px; text-transform: uppercase; transition: 0.3s; }
-.venue-map-btn:hover { background: #1a1a1a; color: white; }
+.venue-map-btn { display: inline-block; padding: 12px 32px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.6); color: #ffffff; text-decoration: none; font-family: 'Montserrat'; font-size: 0.62rem; letter-spacing: 2.5px; text-transform: uppercase; transition: 0.3s; background: transparent; }
+.venue-map-btn:hover { background: rgba(255,255,255,0.2); color: white; }
 
 /* ── Timeline ── */
 .section-timeline { padding: 90px 20px; background: #ffffff; }
@@ -184,9 +185,9 @@ body { font-family: 'Cormorant Garamond', serif; background: var(--light); color
 .tl-name { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; color: var(--text); }
 
 /* ── Dress Code ── */
-.section-dresscode { background: #faf9f7; padding: 100px 20px; text-align: center; }
+.section-dresscode { background: #faf9f7; padding: 60px 20px 100px; text-align: center; }
 .dc-title { font-family: 'Pinyon Script', cursive; font-size: 5.5rem; color: #1a1a1a; line-height: 1; margin-bottom: 30px; }
-.dc-inspo-photo { width: 100%; max-width: 500px; height: 380px; object-fit: cover; object-position: top; border-radius: 12px; box-shadow: 0 16px 48px rgba(0,0,0,0.12); margin: 0 auto 40px; display: block; }
+.dc-inspo-photo { width: 100%; max-width: 500px; height: auto; border-radius: 12px; box-shadow: 0 16px 48px rgba(0,0,0,0.12); margin: 0 auto 40px; display: block; }
 .dc-text { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #1a1a1a; line-height: 1.9; max-width: 480px; margin: 0 auto 44px; white-space: pre-line; }
 
 /* ── Details ── */
@@ -203,23 +204,23 @@ body { font-family: 'Cormorant Garamond', serif; background: var(--light); color
 
 /* ── Schedule ── */
 .section-schedule { position: relative; background: url('photo/instedHEIC.jpg') center center / cover no-repeat; padding: 100px 20px; text-align: center; }
-.section-schedule::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,0.3); }
-.sched-title { position: relative; z-index: 1; font-family: 'Pinyon Script', cursive; font-size: 5rem; color: #1a1a1a; line-height: 1; margin-bottom: 30px; }
-.sched-church { background: rgba(255,255,255,0.92); border-radius: 16px; padding: 36px 32px; margin: 0 auto 60px; max-width: 440px; box-shadow: 0 4px 24px rgba(180,185,190,0.13); }
-.sched-church-label { font-family: 'Montserrat'; font-size: 0.68rem; letter-spacing: 3px; text-transform: uppercase; color: #7a8a7a; margin-bottom: 14px; }
-.sched-church-name { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: #1a1a1a; font-weight: 600; margin-bottom: 8px; }
-.sched-church-addr { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: #6b7a8a; font-style: italic; line-height: 1.7; margin-bottom: 24px; }
-.sched-list { max-width: 380px; margin: 0 auto; }
-.sched-item { display: flex; align-items: center; gap: 16px; padding: 18px 0; border-bottom: 1px solid #f0eeec; }
+.section-schedule::before { content: ''; position: absolute; inset: 0; background: rgba(30,30,30,0.45); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.sched-title { position: relative; z-index: 1; font-family: 'Pinyon Script', cursive; font-size: 5rem; color: #ffffff; line-height: 1; margin-bottom: 16px; }
+.sched-church { background: rgba(255,255,255,0.05); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 36px 32px; margin: 0 auto 24px; max-width: 440px; box-shadow: 0 4px 16px rgba(0,0,0,0.04); }
+.sched-church-label { font-family: 'Montserrat'; font-size: 0.62rem; letter-spacing: 4px; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-bottom: 14px; }
+.sched-church-name { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; color: #ffffff; font-weight: 500; margin-bottom: 10px; line-height: 1.4; }
+.sched-church-addr { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: rgba(255,255,255,0.75); font-style: italic; line-height: 1.8; margin-bottom: 24px; }
+.sched-list { max-width: 400px; margin: 0 auto; background: rgba(255,255,255,0.05); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 12px 28px; box-shadow: 0 4px 16px rgba(0,0,0,0.04); }
+.sched-item { display: flex; align-items: center; gap: 16px; padding: 16px 0; border-bottom: 1px solid rgba(200,190,178,0.25); }
 .sched-item:last-child { border-bottom: none; }
-.sched-time { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.3rem; color: #2a2a2a; min-width: 72px; text-align: right; }
-.sched-dot { width: 8px; height: 8px; border-radius: 50%; background: #7a8a7a; flex-shrink: 0; }
-.sched-event { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 500; color: #1a1a1a; text-align: left; }
-.sched-locations { display: flex; gap: 20px; justify-content: center; margin-bottom: 60px; flex-wrap: wrap; }
+.sched-time { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.1rem; color: rgba(255,255,255,0.7); min-width: 76px; text-align: right; }
+.sched-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.7); flex-shrink: 0; }
+.sched-event { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: #ffffff; text-align: left; }
+.sched-locations { display: flex; gap: 20px; justify-content: center; margin-bottom: 50px; flex-wrap: wrap; }
 .sched-locations .sched-church { margin: 0; flex: 1; min-width: 240px; max-width: 300px; }
-.sched-sublabel { font-family: 'Pinyon Script', cursive; font-size: 2.8rem; color: #1a1a1a; margin-bottom: 20px; }
-.sched-footer-note { margin-top: 44px; border-top: 1px solid #f0eeec; padding-top: 36px; }
-.sched-band { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #1a1a1a; margin-top: 10px; letter-spacing: 0.5px; }
+.sched-sublabel { font-family: 'Pinyon Script', cursive; font-size: 2.8rem; color: #ffffff; margin-bottom: 24px; margin-top: 50px; }
+.sched-footer-note { margin-top: 32px; background: rgba(255,255,255,0.05); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 24px 32px; box-shadow: 0 4px 16px rgba(0,0,0,0.04); }
+.sched-band { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #ffffff; margin-top: 8px; letter-spacing: 0.3px; }
 
 /* ── RSVP ── */
 .rsvp-text { font-style: italic; font-size: 1.1rem; opacity: 0.8; margin-bottom: 40px; line-height: 1.7; }
@@ -259,7 +260,7 @@ body { font-family: 'Cormorant Garamond', serif; background: var(--light); color
 
 /* ── Footer ── */
 .site-footer { position: relative; background: url('photo/bg.photo.jpg') center center / cover no-repeat; padding: 80px 20px 60px; text-align: center; overflow: hidden; }
-.site-footer::before { content: ''; position: absolute; inset: 0; background: rgba(10,25,14,0.55); }
+.site-footer::before { content: ''; position: absolute; inset: 0; background: rgba(10,25,14,0.25); }
 .footer-names { position: relative; z-index: 1; font-family: 'Pinyon Script', cursive; font-size: 3.5rem; color: white; margin-bottom: 14px; }
 .footer-date { position: relative; z-index: 1; font-family: 'Montserrat'; font-size: 0.6rem; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 12px; }
 .footer-note { position: relative; z-index: 1; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.6rem; color: rgba(255,255,255,0.75); margin-bottom: 24px; }
