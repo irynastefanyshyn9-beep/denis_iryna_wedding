@@ -22,10 +22,16 @@
     <!-- 1. Hero -->
     <section class="hero">
         <div class="hero-content">
-            <p class="hero-pretitle" data-ua="Ви запрошені!" data-en="YOU ARE INVITED!">YOU ARE INVITED!</p>
+            <p class="hero-pretitle" data-ua="Ви запрошені на наше весілля!" data-en="You are invited to our wedding!">You are invited to our wedding!</p>
             <h1 class="hero-names">Denis & Iryna</h1>
             <div class="hero-divider"></div>
             <p class="hero-date" data-ua="14 серпня 2026 · Торонто, Онтаріо" data-en="August 14, 2026 · Toronto, Ontario">August 14, 2026 · Toronto, Ontario</p>
+            <div class="hero-countdown">
+                <div class="countdown-item"><span class="countdown-num" id="cd-days">000</span><span class="countdown-label" data-ua="днів" data-en="days">days</span></div>
+                <div class="countdown-item"><span class="countdown-num" id="cd-hours">00</span><span class="countdown-label" data-ua="годин" data-en="hours">hours</span></div>
+                <div class="countdown-item"><span class="countdown-num" id="cd-mins">00</span><span class="countdown-label" data-ua="хвилин" data-en="min">min</span></div>
+                <div class="countdown-item"><span class="countdown-num" id="cd-secs">00</span><span class="countdown-label" data-ua="секунд" data-en="sec">sec</span></div>
+            </div>
         </div>
         <div class="hero-scroll-hint">
             <div class="scroll-line"></div>
@@ -53,7 +59,7 @@
             <h2 class="venue-title" data-ua="Місце" data-en="Venue">Venue</h2>
             <div class="elegant-line"></div>
             <div class="venue-photo-wrap">
-                <img src="photo/venie.jpg" class="venue-photo" alt="The Glenerin Inn & Spa">
+                <img src="photo/Exterior.jpeg" class="venue-photo" alt="The Glenerin Inn & Spa">
             </div>
             <h3 class="venue-name" data-ua="The Glenerin Inn & Spa, Міссісога" data-en="The Glenerin Inn & Spa, Mississauga">The Glenerin Inn & Spa, Mississauga</h3>
             <p class="venue-desc" data-ua="Позачасовий маєток, оточений елегантними садами та романтичним шармом у Міссісозі, Онтаріо." data-en="A timeless estate venue surrounded by elegant gardens and romantic charm in Mississauga, Ontario.">A timeless estate venue surrounded by elegant gardens and romantic charm in Mississauga, Ontario.</p>
@@ -88,50 +94,70 @@ Ladies are kindly asked to avoid black, bright red, and white attire. ✨</p>
             <h2 class="sched-title" data-ua="День весілля" data-en="The Wedding Day">The Wedding Day</h2>
             <div class="elegant-line"></div>
 
-            <div class="sched-church">
-                <p class="sched-church-label" data-ua="Церемонія" data-en="Ceremony">Ceremony</p>
-                <p class="sched-church-name">St. Mary's Ukrainian Catholic Church</p>
-                <p class="sched-church-addr">3625 Cawthra Rd, Mississauga, ON L5A 2Y4</p>
-                <a href="https://maps.google.com/?q=St+Mary%27s+Ukrainian+Catholic+Church+3625+Cawthra+Rd+Mississauga" target="_blank" class="venue-map-btn" data-ua="Відкрити в Google Maps" data-en="Open in Google Maps">Open in Google Maps</a>
+            <!-- Locations -->
+            <div class="sched-locations">
+                <div class="sched-church">
+                    <p class="sched-church-label" data-ua="Церемонія" data-en="Ceremony">Ceremony</p>
+                    <p class="sched-church-name">St. Mary's Ukrainian Catholic Church</p>
+                    <p class="sched-church-addr">3625 Cawthra Rd,<br>Mississauga, ON L5A 2Y4</p>
+                    <a href="https://maps.google.com/?q=St+Mary%27s+Ukrainian+Catholic+Church+3625+Cawthra+Rd+Mississauga" target="_blank" class="venue-map-btn" data-ua="Відкрити в Google Maps" data-en="Open in Google Maps">Open in Google Maps</a>
+                </div>
+                <div class="sched-church">
+                    <p class="sched-church-label" data-ua="Прийом" data-en="Reception">Reception</p>
+                    <p class="sched-church-name">The Glenerin Inn & Spa</p>
+                    <p class="sched-church-addr">1695 The Collegeway,<br>Mississauga, ON L5L 3S7</p>
+                    <a href="https://maps.google.com/?q=The+Glenerin+Inn+Spa+1695+The+Collegeway+Mississauga" target="_blank" class="venue-map-btn" data-ua="Відкрити в Google Maps" data-en="Open in Google Maps">Open in Google Maps</a>
+                </div>
             </div>
 
+            <!-- Schedule -->
+            <p class="sched-sublabel" data-ua="Святкування" data-en="The Celebration">The Celebration</p>
             <div class="sched-list">
                 <div class="sched-item">
-                    <span class="sched-time">1:00 pm</span>
+                    <span class="sched-time">1:00 PM</span>
                     <span class="sched-dot"></span>
-                    <span class="sched-event" data-ua="Церемонія" data-en="Wedding Ceremony">Wedding Ceremony</span>
+                    <span class="sched-event" data-ua="Вінчання" data-en="Wedding Ceremony">Wedding Ceremony</span>
                 </div>
                 <div class="sched-item">
-                    <span class="sched-time">4:30 pm</span>
+                    <span class="sched-time">4:30 PM</span>
                     <span class="sched-dot"></span>
                     <span class="sched-event" data-ua="Прийом" data-en="Reception">Reception</span>
                 </div>
                 <div class="sched-item">
-                    <span class="sched-time">5:00 pm</span>
+                    <span class="sched-time">6:00 PM</span>
                     <span class="sched-dot"></span>
                     <span class="sched-event" data-ua="Вечеря" data-en="Dinner">Dinner</span>
                 </div>
                 <div class="sched-item">
-                    <span class="sched-time">10:00 pm</span>
+                    <span class="sched-time">10:00 PM</span>
                     <span class="sched-dot"></span>
-                    <span class="sched-event" data-ua="Розрізання торту 🎂" data-en="Cake Cutting 🎂">Cake Cutting 🎂</span>
+                    <span class="sched-event" data-ua="Розрізання торту" data-en="Cake Cutting">Cake Cutting</span>
                 </div>
             </div>
-            <p class="sched-band" data-ua="Живий виступ — Український гурт та розваги 🎶" data-en="Live Performance — Ukrainian Band &amp; Entertainment 🎶">Live Performance — Ukrainian Band &amp; Entertainment 🎶</p>
+
+            <div class="sched-footer-note">
+                <p class="sched-band" data-ua="Живий Український гурт та розваги 🎶" data-en="Live Ukrainian Band &amp; Entertainment 🎶">Live Ukrainian Band &amp; Entertainment 🎶</p>
+                <p class="sched-band" data-ua="Танцюємо до 1:00 AM — танцюємо всю ніч! 💃" data-en="Dancing Until 1:00 AM — Let's Dance the Night Away 💃">Dancing Until 1:00 AM — Let's Dance the Night Away 💃</p>
+            </div>
         </div>
     </section>
 
     <!-- 6. RSVP -->
-    <section class="section-rsvp">
-        <div class="rsvp-scene reveal-hidden">
-            <div class="rsvp-card">
-                <p class="rsvp-kindly">Kindly</p>
-                <h2 class="rsvp-reply">REPLY</h2>
-                <p class="rsvp-desc" data-ua="Будь ласка, підтвердіть участь за посиланням нижче до&#10;15 червня 2026" data-en="Kindly RSVP using the link below by&#10;June 15, 2026">Kindly RSVP using the link below by<br>June 15, 2026</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScolpnlTlLTc4lCwMdfz715YhOFiK288XJjtj2mMA2PjXwYAw/viewform?usp=header" target="_blank" class="rsvp-click" data-ua="Натисніть тут" data-en="Click here">Click here</a>
-            </div>
+    <section class="section-rsvp-new">
+        <div class="container reveal-hidden">
+            <h2 class="rsvp-new-title" data-ua="Підтвердження" data-en="RSVP">RSVP</h2>
+            <div class="elegant-line"></div>
+            <p class="rsvp-new-desc" data-ua="Будь ласка, підтвердіть вашу участь до 15 червня 2026 року." data-en="Kindly confirm your attendance by June 15, 2026.">Kindly confirm your attendance by June 15, 2026.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScolpnlTlLTc4lCwMdfz715YhOFiK288XJjtj2mMA2PjXwYAw/viewform?usp=header" target="_blank" class="rsvp-new-btn" data-ua="Підтвердити участь" data-en="Confirm Attendance">Confirm Attendance</a>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <h2 class="footer-names">Denis & Iryna</h2>
+        <p class="footer-date" data-ua="14 серпня 2026 · Місісога, Онтаріо" data-en="August 14, 2026 · Mississauga, Ontario">August 14, 2026 · Mississauga, Ontario</p>
+        <p class="footer-note" data-ua="З нетерпінням чекаємо на вас ♡" data-en="We can't wait to celebrate with you ♡">We can't wait to celebrate with you ♡</p>
+    </footer>
 
     <script src="main.js"></script>
 </body>

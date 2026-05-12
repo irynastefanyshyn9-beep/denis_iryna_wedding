@@ -32,6 +32,24 @@ music.play().catch(() => {
     musicBtn.classList.add('muted');
 });
 
+// Countdown
+function updateCountdown() {
+    const wedding = new Date('2026-08-14T14:00:00');
+    const now = new Date();
+    const diff = wedding - now;
+    if (diff <= 0) return;
+    const days = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const mins = Math.floor((diff % 3600000) / 60000);
+    const secs = Math.floor((diff % 60000) / 1000);
+    document.getElementById('cd-days').textContent = days;
+    document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+    document.getElementById('cd-mins').textContent = String(mins).padStart(2, '0');
+    document.getElementById('cd-secs').textContent = String(secs).padStart(2, '0');
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
 document.addEventListener('DOMContentLoaded', () => {
     // Reveal при скролі
     const observer = new IntersectionObserver((entries) => {

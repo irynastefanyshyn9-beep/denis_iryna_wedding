@@ -99,8 +99,8 @@ body { font-family: 'Cormorant Garamond', serif; background: var(--light); color
 }
 .hero-names {
     font-family: 'Pinyon Script', cursive;
-    font-size: 2.2rem;
-    line-height: 1;
+    font-size: 48px !important;
+    line-height: 1.1;
     margin-bottom: 28px;
     white-space: nowrap;
     animation: goldShimmer 5s ease-in-out infinite;
@@ -185,9 +185,9 @@ body { font-family: 'Cormorant Garamond', serif; background: var(--light); color
 
 /* ── Dress Code ── */
 .section-dresscode { background: #faf9f7; padding: 100px 20px; text-align: center; }
-.dc-title { font-family: 'Pinyon Script', cursive; font-size: 5.5rem; color: #2F4E73; line-height: 1; margin-bottom: 30px; }
+.dc-title { font-family: 'Pinyon Script', cursive; font-size: 5.5rem; color: #1a1a1a; line-height: 1; margin-bottom: 30px; }
 .dc-inspo-photo { width: 100%; max-width: 500px; height: 380px; object-fit: cover; object-position: top; border-radius: 12px; box-shadow: 0 16px 48px rgba(0,0,0,0.12); margin: 0 auto 40px; display: block; }
-.dc-text { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #4a6a8a; line-height: 1.9; max-width: 480px; margin: 0 auto 44px; white-space: pre-line; }
+.dc-text { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #1a1a1a; line-height: 1.9; max-width: 480px; margin: 0 auto 44px; white-space: pre-line; }
 
 /* ── Details ── */
 .details-block { margin-bottom: 48px; transition: transform 0.4s ease; }
@@ -203,19 +203,23 @@ body { font-family: 'Cormorant Garamond', serif; background: var(--light); color
 
 /* ── Schedule ── */
 .section-schedule { position: relative; background: url('photo/instedHEIC.jpg') center center / cover no-repeat; padding: 100px 20px; text-align: center; }
-.section-schedule::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,0.82); }
+.section-schedule::before { content: ''; position: absolute; inset: 0; background: rgba(220,222,224,0.72); backdrop-filter: blur(1px); }
 .sched-title { position: relative; z-index: 1; font-family: 'Pinyon Script', cursive; font-size: 5rem; color: #1a1a1a; line-height: 1; margin-bottom: 30px; }
-.sched-church { background: #faf9f7; border-radius: 16px; padding: 36px 32px; margin: 0 auto 60px; max-width: 440px; }
-.sched-church-label { font-family: 'Montserrat'; font-size: 0.68rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+.sched-church { background: rgba(255,255,255,0.92); border-radius: 16px; padding: 36px 32px; margin: 0 auto 60px; max-width: 440px; box-shadow: 0 4px 24px rgba(180,185,190,0.13); }
+.sched-church-label { font-family: 'Montserrat'; font-size: 0.68rem; letter-spacing: 3px; text-transform: uppercase; color: #7a8a7a; margin-bottom: 14px; }
 .sched-church-name { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: #1a1a1a; font-weight: 500; margin-bottom: 8px; }
 .sched-church-addr { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: #6b7a8a; font-style: italic; line-height: 1.7; margin-bottom: 24px; }
 .sched-list { max-width: 380px; margin: 0 auto; }
 .sched-item { display: flex; align-items: center; gap: 16px; padding: 18px 0; border-bottom: 1px solid #f0eeec; }
 .sched-item:last-child { border-bottom: none; }
 .sched-time { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1rem; color: #9aabbf; min-width: 72px; text-align: right; }
-.sched-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+.sched-dot { width: 8px; height: 8px; border-radius: 50%; background: #7a8a7a; flex-shrink: 0; }
 .sched-event { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; color: #1a1a1a; text-align: left; }
-.sched-band { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: var(--gold); margin-top: 40px; letter-spacing: 0.5px; }
+.sched-locations { display: flex; gap: 20px; justify-content: center; margin-bottom: 60px; flex-wrap: wrap; }
+.sched-locations .sched-church { margin: 0; flex: 1; min-width: 240px; max-width: 300px; }
+.sched-sublabel { font-family: 'Pinyon Script', cursive; font-size: 2.8rem; color: #1a1a1a; margin-bottom: 20px; }
+.sched-footer-note { margin-top: 44px; border-top: 1px solid #f0eeec; padding-top: 36px; }
+.sched-band { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: #1a1a1a; margin-top: 10px; letter-spacing: 0.5px; }
 
 /* ── RSVP ── */
 .rsvp-text { font-style: italic; font-size: 1.1rem; opacity: 0.8; margin-bottom: 40px; line-height: 1.7; }
@@ -238,6 +242,28 @@ body { font-family: 'Cormorant Garamond', serif; background: var(--light); color
 .reveal-hidden { opacity: 0; transform: translateY(30px); transition: opacity 1.2s ease, transform 1.2s ease; }
 .reveal-visible { opacity: 1; transform: translateY(0); }
 
+/* ── Countdown ── */
+.hero-countdown { display: flex; gap: 24px; justify-content: center; margin-top: 28px; }
+.countdown-item { display: flex; flex-direction: column; align-items: center; }
+.countdown-num { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 300; color: white; line-height: 1; }
+.countdown-label { font-family: 'Montserrat'; font-size: 0.55rem; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-top: 4px; }
+
+/* ── RSVP new ── */
+.section-rsvp-new { background: #ffffff; padding: 100px 20px; text-align: center; position: relative; }
+.section-rsvp-new::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 1px; background: #c9b99a; }
+.rsvp-new-title { font-family: 'Pinyon Script', cursive; font-size: 5.5rem; color: #3a3228; line-height: 1; margin-bottom: 30px; }
+.section-rsvp-new .elegant-line { background: #c9b99a; }
+.rsvp-new-desc { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-style: italic; color: #6b5f52; margin-bottom: 40px; line-height: 1.9; }
+.rsvp-new-btn { display: inline-block; padding: 15px 52px; border: 1px solid #a8916e; color: #3a3228; text-decoration: none; font-family: 'Montserrat'; font-size: 0.68rem; letter-spacing: 3px; text-transform: uppercase; transition: 0.35s; border-radius: 30px; background: transparent; }
+.rsvp-new-btn:hover { background: #a8916e; color: white; }
+
+/* ── Footer ── */
+.site-footer { position: relative; background: url('photo/bg.photo.jpg') center center / cover no-repeat; padding: 80px 20px 60px; text-align: center; overflow: hidden; }
+.site-footer::before { content: ''; position: absolute; inset: 0; background: rgba(10,25,14,0.55); }
+.footer-names { position: relative; z-index: 1; font-family: 'Pinyon Script', cursive; font-size: 3.5rem; color: white; margin-bottom: 14px; }
+.footer-date { position: relative; z-index: 1; font-family: 'Montserrat'; font-size: 0.6rem; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 12px; }
+.footer-note { position: relative; z-index: 1; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1rem; color: rgba(255,255,255,0.75); }
+
 /* ── Ukrainian language overrides ── */
 body.lang-ua .hero-pretitle { font-size: 3rem; }
 
@@ -256,7 +282,7 @@ body.lang-ua .elegant-line { background: #1a1a1a; }
 
 /* ── Mobile ── */
 @media (max-width: 600px) {
-    .hero-names { font-size: 4.5rem; }
+    .hero-names { font-size: 48px !important; }
     .hero-pretitle { font-size: 2.2rem; }
     .section-light, .section-dark { padding: 80px 24px; }
     .timeline::before { left: 72px; }
